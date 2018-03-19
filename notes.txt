@@ -1,0 +1,17 @@
+npm -note package manager.
+go to browser then https://codeshare.io/GAyRbr
+npm install -g ember-cli@2.18 
+this will install all nessasary files.
+
+create new project
+ember new myapp
+change to myapp folder
+cd myapp
+
+create server 
+enber serve
+
+
+========
+CoC = convention over configuration
+
