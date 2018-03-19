@@ -4,6 +4,7 @@ import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 import numericBox from './helpers/numeric_box';  // am:  l
 import Person from './helpers/person';
+import timeManager from './helpers/time_manager';
 
 const App = Application.extend({
   modulePrefix: config.modulePrefix,
@@ -31,5 +32,13 @@ let person = Person.create({
 // observer won't fire until `fullName` is consumed first
 person.get('fullName'); 
 person.set('firstName', 'Tony');
+
+
+
+ 
+let myTimeManager = timeManager.create({
+ time: 12  // init value.
+});
+myTimeManager.set("time",22);
 
 export default App;
