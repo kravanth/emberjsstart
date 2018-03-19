@@ -5,6 +5,9 @@ import config from './config/environment';
 import numericBox from './helpers/numeric_box';  // am:  l
 import Person from './helpers/person';
 import timeManager from './helpers/time_manager';
+import father from './helpers/father';
+import child from './helpers/child';
+
 
 const App = Application.extend({
   modulePrefix: config.modulePrefix,
@@ -40,5 +43,20 @@ let myTimeManager = timeManager.create({
  time: 12  // init value.
 });
 myTimeManager.set("time",22);
+
+let ajay = father.create({
+  name:'Ajay',
+  age:40,
+  address:'Whitefield'
+});
+
+var ram = child.create({
+  school:'Whitefield High School',
+  father: ajay
+});
+
+console.log("child's addr: " ,  ram.get('address'));
+ajay.set('address','Mysore');
+console.log("child's addr: " , ram.get('address'));
 
 export default App;
