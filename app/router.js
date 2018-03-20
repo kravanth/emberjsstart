@@ -6,7 +6,18 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
-});
+
+  Router.map(function() {
+    console.log("Router.map() @ Router.js") ;
+    this.route("about",{ path: "/about" });
+   // this.route("twowaybind",{ path: "/twowaybind" });
+    // this.route("products",{ path: "/products" });
+   // this.route("product" ,{path:"/product"});  //alt way of defining route.
+   this.route("products",function(){
+    this.route("new");
+  });
+    
+  });
+
 
 export default Router;
