@@ -18,4 +18,5 @@ CoC = convention over configuration
 DAY 2:
 
 2way buinding ...
-
+==============2day =================
+adapters
