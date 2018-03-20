@@ -15,3 +15,7 @@ enber serve
 ========
 CoC = convention over configuration
 
+DAY 2:
+
+2way buinding ...
+
